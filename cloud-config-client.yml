@@ -8,10 +8,10 @@ spring:
    profiles: dev #开发环境
    application:  
        name: cloud-config-client
-   eureka: 
-        client: 
-        service-url: 
-            defaultZone:http://localhost:7001/eureka/
+eureka: 
+   client: 
+   service-url: 
+   defaultZone:http://localhost:7001/eureka/
 ---
 server:
     port: 8202
@@ -19,7 +19,7 @@ spring:
    profiles: test   #测试环境
    application: 
        name: cloud-config-client
-   eureka: 
-       client: 
-       service-url: 
-           defaultZone:http://127.0.0.1:7001/eureka/    #此处可连接测试环境的eureka地址
+eureka: 
+   client: 
+   service-url: 
+   defaultZone:http://127.0.0.1:7001/eureka/    #此处可连接测试环境的eureka地址
