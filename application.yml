@@ -8,6 +8,6 @@ spring:
        name: cloud-config-dev
 ---
 spring: 
-   profile: test
+   profiles: test
    application: 
        name: cloud-config-test
