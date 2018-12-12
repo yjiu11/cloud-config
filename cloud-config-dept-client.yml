@@ -10,7 +10,8 @@ mybatis:
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
-spring:
+spring: 
+   profiles: dev
    application:
     name: cloud-dept 
    datasource:
@@ -41,8 +42,9 @@ mybatis:
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
-spring:
-   application:
+spring: 
+   profiles: dev
+   application: 
     name: cloud-dept 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
